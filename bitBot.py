@@ -1,4 +1,4 @@
-#04/30/2025 - First discord bot project - very simple calculator
+#First discord bot project - very simple calculator
 #Name = BitBot
 #Author(discord name) = xepherongd_
 
@@ -13,11 +13,13 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
-PI = 4 * atan(1.0)
+PI = 4 * atan(1.0)           #never used, could have used: import pi from math
 
 @bot.command(name="help")
 async def help(ctx):
     await ctx.send("Available commands: \n!add \n!sub \n!mul \n!div")
+
+#every commands below can be activated with a "!" as a prefix
 
 @bot.command()
 async def add(ctx, a, b):
