@@ -1,6 +1,6 @@
 #First discord bot project - very simple calculator
 #Name = BitBot
-#Author(discord name) = xepherongd_
+#very simple project
 
 import os
 import discord
